@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD Part below -->
+<!DOCTYPE bookstore
+[
+<!ELEMENT bookstore (books)>
+<!ELEMENT books (book*)>
+<!ELEMENT book (title, author, genre, publishedyear)>
+<!ATTLIST book id CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT publishedyear (#PCDATA)>
+]>
+
+<?xml-stylesheet type="text/xsl" href="bookstyle.xsl"?>
+
+<!-- XML Part below -->
+<bookstore>
+  <books>
+    <book id="1">
+      <title>Demon Slayer</title>
+      <author>Koyoharu Gotouge</author>
+      <genre>Manga</genre>
+      <publishedyear>2016</publishedyear>
+    </book>
+
+    <book id="2">
+      <title>Naruto</title>
+      <author>Masashi Kishimoto</author>
+      <genre>Manga</genre>
+      <publishedyear>2000</publishedyear>
+    </book>
+
+    <book id="3">
+      <title>One Piece</title>
+      <author>Eiichiro Oda</author>
+      <genre>Manga</genre>
+      <publishedyear>1997</publishedyear>
+    </book>
+
+    <book id="4">
+      <title>Harry Potter</title>
+      <author>J.K. Rowling</author>
+      <genre>Fiction</genre>
+      <publishedyear>1997</publishedyear>
+    </book>
+
+    <book id="5">
+      <title>The Hunger Games</title>
+      <author>Suzanne Collins</author>
+      <genre>Fiction</genre>
+      <publishedyear>2008</publishedyear>
+    </book>
+
+    <book id="6">
+      <title>The Hobbit</title>
+      <author>J.R.R. Tolkien</author>
+      <genre>Fiction</genre>
+      <publishedyear>1937</publishedyear>
+    </book>
+
+    <book id="7">
+      <title>Batman</title>
+      <author>Bill Finger</author>
+      <genre>Comics</genre>
+      <publishedyear>1994</publishedyear>
+    </book>
+
+    <book id="8">
+      <title>Spiderman</title>
+      <author>Stahn Lee</author>
+      <genre>Comics</genre>
+      <publishedyear>2018</publishedyear>
+    </book>
+
+      <book id="9">
+      <title>Deadpool</title>
+      <author>Nick Spencer</author>
+      <genre>Comics</genre>
+      <publishedyear>2017</publishedyear>
+    </book>
+    
+  </books>
+
+</bookstore>

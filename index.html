@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+ <!-- Internal CSS -->
+<style>
+  .flex{
+      display:flex;
+  }
+  
+  .space-between{
+      justify-content: space-between;
+  }
+
+  .text-center{
+    text-align: center;
+  }
+</style>
+
+<body style="width:100%">
+
+  <!-- Home Section -->
+  <section>
+    <!-- Navbar -->
+    <header>
+      <div id="navbar" class="flex">
+        <!-- Logo -->
+        <div id="logo"><img src="./images/ShopLogoDesign.png" alt="logo"></div>
+        <div>
+          <ul class="flex" style="list-style-type: none">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact-info">Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="home">
+
+      <!-- Background Image -->
+      <div class="bg-image-container">
+        <img id="bg-image" src="images/background_image.jpg" alt="background-image">
+      </div>
+
+      <div class="home-text-container">
+        <h1 class="text-xxl">Buy and sell your textbooks for the best price</h1>
+        <p>From applied literature to educational resources. we have a lot of textbooks to offer you. We provide only
+          the best books for rent</p>
+        <div class="btn"><a href="#book">Discover More</a></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Book Section -->
+  <section id="book">
+    <div class="row">
+      <div class="content">
+        <h3>Up to <strong>60%</strong> off</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure maiores perferendis, eius est cumque sint
+          veritatis recusandae? Voluptates, doloremque molestiae!</p>
+        <a href="./backend/books.xml" target="_blank" class="btn">Shop Now</a>
+      </div>
+
+      <!-- Best Seller Section -->
+      <div class="swiper books-slider">
+        <div class="label green-text text-center"><h1>Best Seller</h1></div>
+        <div class="swiper-wrapper">
+          <a href="#" class="swipper-slide"><img src="images/Batman.jpg" alt=""></a>
+          <a href="#" class="swipper-slide"><img src="images/book2.png" alt=""></a>
+          <a href="#" class="swipper-slide"><img src="images/book3.png" alt=""></a>
+          <a href="#" class="swipper-slide"><img src="images/book4.png" alt=""></a>
+          <a href="#" class="swipper-slide"><img src="images/book5.png" alt=""></a>
+          <a href="#" class="swipper-slide"><img src="images/Spiderman.jpg" alt=""></a>
+        </div>
+        <img src="images/stand.png" class="stand" alt="">
+      </div>
+
+    </div>
+
+      <div class="flex books-main-container"> 
+  
+        <!-- Manga Section -->
+        <div class="book-shelf text-center">
+          <h1 class="label green-text text-center">Manga</h1>
+          <div class="books-container flex">
+            <div class="box-shadow book-image box-shadow"><img src="images/book1.png" alt="Book1"></div>
+            <div class="box-shadow book-image box-shadow"><img src="images/book3.png" alt="Book2"></div>
+            <div class="box-shadow book-image box-shadow"><img src="images/book4.png" alt="Book3"></div>
+          </div>
+        </div>   
+
+        <!-- Fiction Section -->
+        <div class="book-shelf text-center">
+          <h1 class="label green-text text-center">Fiction</h1>
+          <div class="books-container flex">
+            <div class="box-shadow book-image box-shadow"><img src="images/book2.png" alt="Book4"></div>
+            <div class="box-shadow book-image box-shadow"><img src="images/book5.png" alt="Book5"></div>
+            <div class="box-shadow book-image box-shadow"><img src="images/book6.png" alt="Book6"></div>
+          </div>
+        </div> 
+
+        <!-- Comics Section -->
+        <div class="book-shelf text-center">
+          <h1 class="label green-text text-center">Comics</h1>
+          <div class="books-container flex">
+            <div class="box-shadow book-image box-shadow"><img src="images/Batman.jpg" alt="Book7"></div>
+            <div class="box-shadow book-image box-shadow"><img src="images/Spiderman.jpg" alt="Book8"></div>
+            <div class="box-shadow book-image box-shadow"><img src="images/Deadpool.jpg" alt="Book9"></div>
+          </div>
+        </div> 
+  
+      </div>
+
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <h2 class="green-text text-center">Customer Reviews</h2>
+    <div class="flex" id="review-card-container">
+      <div class="review-card box-shadow">
+        <div class="card-header flex">
+          <div class="round-container">
+            <img class="round-image" src="./images/person-1.jpg" alt="person1">
+          </div>
+          <h3>Anny Smith</h3>
+        </div>
+        <p>"This bookshop has a fantastic collection of books. The staff is friendly and knowledgeable. Highly
+          recommended!"</p>
+      </div>
+  
+      <div class="review-card box-shadow">
+        <div class="card-header flex">
+          <div class="round-container">
+            <img class="round-image" src="./images/person-3.jpg" alt="person2">
+          </div>
+          <h3>Xavier Johnson</h3>
+        </div>
+        <p>"I love visiting this bookshop. They always have the latest releases and offer great recommendations. A
+          bookworm's paradise!"</p>
+      </div>
+  
+      <div class="review-card box-shadow">
+        <div class="card-header flex">
+          <div class="round-container">
+            <img class="round-image" src="./images/person-2.jpg" alt="person3">
+          </div>
+          <h3>Luccy Goodman</h3>
+        </div>
+        <p>"The best book store around. Period!!! No other book store comes close to the WordSmiths Village."</p>
+      </div>
+    </div>
+  </section>
+
+   <!-- Opening Hours Section -->
+  <section id="opening-hours">
+    <h2 class="open green-text text-center">Opening Times</h2>
+    <!-- Opening Hours Table -->
+    <table class="box-shadow" id="hours-table">
+      <tr id="header-row">
+        <th class="text-center">Day</th>
+        <th class="text-center">Opening Hours</th>
+      </tr>
+      <tr>
+        <td class="text-center">Monday</td>
+        <td class="text-center">9:00 AM - 6:00 PM</td>
+      </tr>
+      <tr>
+        <td class="text-center">Tuesday</td>
+        <td class="text-center">9:00 AM - 6:00 PM</td>
+      </tr>
+      <tr>
+        <td class="text-center">Wednesday</td>
+        <td class="text-center">9:00 AM - 6:00 PM</td>
+      </tr>
+      <tr>
+        <td class="text-center">Thursday</td>
+        <td class="text-center">9:00 AM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td class="text-center">Friday</td>
+        <td class="text-center">9:00 AM - 8:00 PM</td>
+      </tr>
+      <tr>
+        <td class="text-center">Saturday</td>
+        <td class="text-center">10:00 AM - 4:00 PM</td>
+      </tr>
+      <tr>
+        <td class="text-center">Sunday</td>
+        <td class="text-center"><strong>Closed</strong></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div id="contact-info">
+      <div>
+        <h2>Contact Info</h2>
+      </div>
+      <div class="flex space-between">
+        <ul class="flex" style="list-style-type: none">
+          <li class="footer-labels"><strong>Address:</strong> 123 Beaver Lane, Gotham City</li>
+          <li class="footer-labels"><strong>Email</strong>: wordsmithvillage@gmail.com </li>
+          <li class="footer-labels"><strong>Phone:</strong> +123 456 789</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
